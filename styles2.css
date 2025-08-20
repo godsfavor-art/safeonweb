@@ -3470,7 +3470,7 @@ screen and (min-width:64em) {
 }
 
 .is-active>.accordion-title::before {
-    content: "â€“"
+    content: "⌄"
 }
 
 .accordion-content {
@@ -5280,24 +5280,22 @@ a.link-arrow {
     text-decoration: none
 }
 
-a.link-arrow::after {
-    font-size: 20px;
-    font-family: 'iconfont';
+*a.link-arrow::after {
+    font-family: iconfont;
     speak: none;
     font-style: normal;
     font-weight: normal;
-    font-variant: normal;
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "ï„„";
+    content: "⟶";
     display: inline-block;
     margin-right: 4px;
     margin-left: 8px;
-    transition: transform .25s ease;
     vertical-align: -0.275em;
-    font-size: 1.5em
+    font-size: 1.5em;
+    font-variant: normal;
+    transition: transform 0.25s;
 }
 
 a.link-arrow:hover::after {
@@ -6370,7 +6368,7 @@ screen and (min-width:64em) {
     height: 58px;
     margin-right: 24px;
     content: "";
-    background: url(/themes/custom/sow_work_theme/images/logos-gov.svg) center/100% no-repeat
+    background: url(https://atwork.safeonweb.be/themes/custom/sow_work_theme/images/logos-gov.svg) 
 }
 
 @media print,
